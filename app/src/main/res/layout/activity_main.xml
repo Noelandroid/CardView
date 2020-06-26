@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardview"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="20dp"
+        android:layout_height="330dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                style="@style/Base.CardView"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="TOKYO" />
+
+            <ImageView
+                android:id="@+id/tokyo"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/tokyo" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="Tokyo Metropolis is the capital and most populous prefecture of Japan. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japan's main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
